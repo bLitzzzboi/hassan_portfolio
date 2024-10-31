@@ -79,7 +79,7 @@ function DYNR() {
           <div style={{ display: "flex", justifyContent: "center", margin: "20px 0", 
           fontSize:'6vh', fontFamily:'UltraBold', lineHeight:'1.2', paddingLeft:'10px', marginBottom:'70px'
           }} className="responsive-video-container">
-          <video src="https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/find_food.mp4" style={{width:'25vh', marginRight:'20px'}} autoPlay loop muted playsInline className="app-video"></video>
+          <video src={video_food} style={{width:'25vh', marginRight:'20px'}} autoPlay loop muted playsInline className="app-video"></video>
           "From sushi to burgers, your taste is unique. DYNR curates personalized recommendations 
           that grow with you!"
           </div>

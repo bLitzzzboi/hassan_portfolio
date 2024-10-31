@@ -35,7 +35,7 @@ function TutorX() {
   }}
 >
   <video
-    src="https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/find_tutor.mp4"
+    src={find_tutor}
     style={{ width: "33%", marginBottom: "20px" }}
     autoPlay
     loop

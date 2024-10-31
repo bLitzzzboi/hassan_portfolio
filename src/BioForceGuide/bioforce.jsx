@@ -189,7 +189,7 @@ function BioForce() {
         
         {/* Video */}
         <video
-          src="https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/app_video-2.mp4"
+          src={app_video}
           autoPlay
           loop 
           muted

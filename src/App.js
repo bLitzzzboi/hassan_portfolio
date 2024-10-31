@@ -131,17 +131,6 @@ function App() {
     };
   }, []);
 
-    // Preload video
-    useEffect(() => {
-      const videoElement = document.createElement("video");
-      videoElement.src = "https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/128kmac.mp4";
-      videoElement.preload = "auto"; // Preload the video
-      videoElement.load(); // Start loading the video
-  
-      return () => {
-        videoElement.src = "";
-      };
-    }, []);
   
 
   if (showRest) {
