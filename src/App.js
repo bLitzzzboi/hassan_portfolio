@@ -131,6 +131,19 @@ function App() {
     };
   }, []);
 
+    // Preload video
+    useEffect(() => {
+      const videoElement = document.createElement("video");
+      videoElement.src = "https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/128kmac.mp4";
+      videoElement.preload = "auto"; // Preload the video
+      videoElement.load(); // Start loading the video
+  
+      return () => {
+        videoElement.src = "";
+      };
+    }, []);
+  
+
   if (showRest) {
     setTimeout(() => {
       setIsLoading(false);
@@ -174,7 +187,9 @@ function App() {
           </p>
         </div>
         <div className="video-container">
-          <video src="https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/128kmac.mp4" autoPlay loop muted playsInline type="video/mp4" className="app-video"></video>
+          <video src="https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/128kmac.mp4" 
+          preload="auto" // Ensure the video is preloaded
+          autoPlay loop muted playsInline type="video/mp4" className="app-video"></video>
         </div>
         <div className="dock">
           <div className="dock-item">
