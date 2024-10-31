@@ -11,7 +11,7 @@ import node_logo from "./node_logo.png";
 function Sales() {
   return (
     <div className="header-content">
-        <img src={biosales_image} alt="BioSales"/>
+        <img src={biosales_image} alt="BioSales" loading="lazy"/>
         <hr className="my-line" style={{ width: "79%", margin: "20px auto", borderColor: '#2c2c2c'  }} />
 
         <h1>BioSales</h1>
