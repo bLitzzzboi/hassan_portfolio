@@ -1,0 +1,198 @@
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top */
+    z-index: 1000;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .modal-content {
+    background: #191819;
+    padding: 0; /* Remove padding from modal content */
+    border-radius: 8px;
+    margin-top: 50px; /* Adjust this to position it slightly lower */
+    max-width: 950px; /* Set a max width for the modal */
+    width: 100%; /* Full width up to max-width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start invisible for fade-in effect */
+    transform: translateY(20px); /* Start from slightly lower position */
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Smoother easing */
+    color: white;
+    font-family: 'Regular';
+}
+
+.modal-content.slide-out {
+  animation: slideOut 0.4s forwards; /* Animation for slide out */
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 8px 8px 0 0; /* Optional: Rounded corners for top edges */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.modal-content video {
+  width: 100%;
+  border-radius: 8px 8px 0 0; /* Optional: Rounded corners for top edges */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+.modal-content h1 {
+    padding-top: 20px;
+    padding-left: 100px; /* Add padding to paragraphs */
+    font-size: 40px;
+}
+
+.modal-content h2 {
+  padding-top: 20px;
+  padding-left: 100px; /* Add padding to paragraphs */
+  font-size: 30px;
+}
+
+
+
+.modal-content ul {
+    padding-top: 20px;
+    padding-left: 100px; /* Add padding to paragraphs */
+    padding-right: 100px;
+    line-height: 1.5;
+    font-size: 15px;
+
+}
+
+.modal-content p {
+    padding-left: 100px; /* Add padding to paragraphs */
+    padding-right: 100px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .modal-body {
+
+    overflow-y: auto; /* Enable scrolling for modal content */
+  }
+
+  /* Media query for mobile screens (adjust width as needed) */
+@media (max-width: 768px) {
+  .modal-content p,
+  .modal-content ul,
+  .modal-content h1,
+  .modal-content h2 {
+    padding-left: 20px; /* Reduce left padding on smaller screens */
+    padding-right: 20px; /* Reduce right padding on smaller screens */
+  }
+
+  .modal-content {
+    margin-top: 30px; /* Optional: reduce margin-top for smaller screens */
+  }
+}
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(20px); /* Start from slightly below */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateY(0); /* End at original position */
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+        opacity: 1; /* Start with full opacity */
+        transform: translateY(0); /* Start at original position */
+    }
+    to {
+        opacity: 0; /* End with opacity 0 */
+        transform: translateY(20px); /* Slide down effect */
+    }
+}
+  
+/* Define styles for smaller screens */
+@media (max-width: 768px) {
+  .responsive-video-container {
+    align-items: center;
+    flex-direction: column; /* Stack the video and text vertically */
+    text-align: center;
+    padding: 10px;
+
+  }
+
+  .responsive-video-container video {
+    padding-bottom: '20px';
+  }
+}
+
+/* Add this CSS to your main CSS file or as inline styles within your component */
+.solution-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding-left: 100px;
+  margin-top: 20px;
+}
+
+/* Media query to stack elements vertically on small screens */
+@media (max-width: 768px) {
+  .solution-section {
+    flex-direction: column;
+    align-items: center; /* Center align the items horizontally */
+    justify-content: center; /* Center align the items vertically */
+    text-align: center; /* Center text content */
+    padding: 20px; /* Add some padding for spacing */
+  }
+
+  .solution-section video {
+    width: 80%; /* Adjust the width as needed for better fit on smaller screens */
+    margin-bottom: 20px; /* Add spacing between video and text */
+  }
+
+  .solution-section p {
+    width: 100%; /* Make the paragraph take full width */
+  }
+
+  .farmer-features{
+    flex-direction: column;
+    align-items: center; /* Center align the items horizontally */
+    width: 120%;
+  }
+
+  .tutor-stack{
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    width: 120%;
+  }
+
+  .screenshots{
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+}
+
+
