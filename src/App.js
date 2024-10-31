@@ -174,7 +174,7 @@ function App() {
           </p>
         </div>
         <div className="video-container">
-          <video src={mac_vid} autoPlay loop muted playsInline className="app-video"></video>
+          <video src={mac_vid} autoPlay loop muted playsInline type="video/mp4" className="app-video"></video>
         </div>
         <div className="dock">
           <div className="dock-item">
