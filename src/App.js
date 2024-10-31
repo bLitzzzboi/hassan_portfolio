@@ -4,6 +4,7 @@ import "./App.css";
 import "./fonts/PPNeueMachina-PlainUltrabold.otf";
 import tapeTexture from "./images/32.png";
 import tapeTexture_Top from "./images/23.png";
+import mac_vid from "./images/128kmac.mp4";
 import icon1 from "./images/icon1.png";
 import icon2 from "./images/icon2.png";
 import icon3 from "./images/icon3.png";
@@ -173,7 +174,7 @@ function App() {
           </p>
         </div>
         <div className="video-container">
-          <video src="/videos/128kmac.mp4" autoPlay loop muted playsInline className="app-video"></video>
+          <video src={mac_vid} autoPlay loop muted playsInline className="app-video"></video>
         </div>
         <div className="dock">
           <div className="dock-item">

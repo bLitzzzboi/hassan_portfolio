@@ -7,6 +7,7 @@ import node from "./node_logo.png";
 import billing from "./billing.png";
 import tutor from "./tutor.png";
 import student from "./student.png";
+import find_tutor from "./find_tutor.mp4";
 
 
 function TutorX() {
@@ -34,7 +35,7 @@ function TutorX() {
   }}
 >
   <video
-    src="../videos/find_tutor.mp4"
+    src={find_tutor}
     style={{ width: "33%", marginBottom: "20px" }}
     autoPlay
     loop

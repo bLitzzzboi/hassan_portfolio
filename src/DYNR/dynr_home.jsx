@@ -1,5 +1,6 @@
 import React from "react";
 import dynr_image from "../images/dynr_full.jpg";
+import video_food from "./find_food.mp4";
 import mockup from "./phones_mockup.jpg";
 import richierich from "./richierich.png";
 import mrpopular from "./mrpopular.png";
@@ -78,7 +79,7 @@ function DYNR() {
           <div style={{ display: "flex", justifyContent: "center", margin: "20px 0", 
           fontSize:'50px', fontFamily:'UltraBold', lineHeight:'1.2', paddingLeft:'10px', marginBottom:'70px'
           }} className="responsive-video-container">
-          <video src="../videos/find_food.mp4" style={{width:'25vh', marginRight:'20px'}} autoPlay loop muted playsInline className="app-video"></video>
+          <video src={video_food} style={{width:'25vh', marginRight:'20px'}} autoPlay loop muted playsInline className="app-video"></video>
           "From sushi to burgers, your taste is unique. DYNR curates personalized recommendations 
           that grow with you!"
           </div>

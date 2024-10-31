@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "UltraBold";   
+  src: local("PPNeueMachina-PlainUltrabold"),
+    url("./fonts/PPNeueMachina-PlainUltrabold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: local("PPNeueMachina-InktrapRegular"),
+    url("./fonts/PPNeueMachina-InktrapRegular.otf") format("opentype");
+}
