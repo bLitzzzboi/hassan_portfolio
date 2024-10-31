@@ -4,7 +4,7 @@ import "./App.css";
 import "./fonts/PPNeueMachina-PlainUltrabold.otf";
 import tapeTexture from "./images/32.png";
 import tapeTexture_Top from "./images/23.png";
-import mac_vid from "./images/128kmac.mp4";
+import mac_vid from "./images/128kmac.jpg";
 import icon1 from "./images/icon1.png";
 import icon2 from "./images/icon2.png";
 import icon3 from "./images/icon3.png";
@@ -176,9 +176,7 @@ function App() {
           </p>
         </div>
         <div className="video-container">
-          <video src={mac_vid}
-          preload="auto" // Ensure the video is preloaded
-          autoPlay loop muted playsInline type="video/mp4" className="app-video"></video>
+          <img src={mac_vid} className="app-video"></img>
         </div>
         <div className="dock">
           <div className="dock-item">
