@@ -4,6 +4,9 @@
   background-color: #000000;
   /* overflow: hidden; */
   overflow-y: auto;
+  text-rendering:optimizeLegibility;
+  font-weight: 400
+
 }
 html {
   scroll-behavior: smooth;
