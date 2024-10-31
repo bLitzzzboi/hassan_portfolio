@@ -187,7 +187,7 @@ function App() {
           </p>
         </div>
         <div className="video-container">
-          <video src="https://myportfoliobucket-hassan.s3.eu-north-1.amazonaws.com/128kmac.mp4" 
+          <video src={mac_vid}
           preload="auto" // Ensure the video is preloaded
           autoPlay loop muted playsInline type="video/mp4" className="app-video"></video>
         </div>
