@@ -170,9 +170,10 @@ function App() {
       <div className="content-row">
         <div className="under-washi-tape">
           <p>
-            Hassan crafts intuitive and engaging digital experiences, blending his expertise in UI/UX and graphic design
-            with a keen eye for detail. As a final-year computer science student at LUMS, he specializes in designing
-            interfaces that captivate users and enhance interaction across web and mobile platforms.
+          I’m a creator at heart, weaving design, data, and development into digital magic. From crafting sleek 
+          interfaces to digging into data for insights, I’m all about building tech that truly connects. 
+          With a toolkit full of UI flair, coding chops, and an endless curiosity, I turn ideas into experiences 
+          that people love to explore. 
           </p>
         </div>
         <div className="video-container">
