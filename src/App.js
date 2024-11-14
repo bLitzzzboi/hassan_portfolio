@@ -37,7 +37,7 @@ function App() {
     "",
     <span style={{ color: "green" }}>Compiled successfully!</span>,
     "",
-    "You can now view hassan_portfolio in the browser.",
+    "You can now view my Portfolio in the browser.",
     "",
     <span>
       {"  Local:                   "}
@@ -48,11 +48,12 @@ function App() {
       <span style={{ color: "cyan" }}>hassansajjad.me</span>
     </span>,
     "",
-    "Note: You are in *development mode*. Things are still being polished.",
+    "Psst... *development mode* is ON! Expect a few wonky moments as we work our magic.",
     "",
-    "Ready for the *next big release*? Keep an eye out for new features and updates!",
+    "Feeling adventurous? Keep watch for exciting new updates lurking around the corner!",
     "",
-    "Status: Compilation Complete (You are all set!)",
+    "Status: Compilation Complete (Smooth sailing ahead!)",
+
   ];
 
   const openModalWithContent = (component) => {
